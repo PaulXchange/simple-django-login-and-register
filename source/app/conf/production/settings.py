@@ -5,7 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 BASE_DIR = dirname(dirname(dirname(dirname(os.path.abspath(__file__)))))
 CONTENT_DIR = os.path.join(BASE_DIR, 'content')
 
-SECRET_KEY = '3d305kajG5Jy8KBafCMpHwDIsNi0SqVaW'
+SECRET_KEY = '3r!e9f(vhc5n8t=57=_tr4sdc#tdem@v*%0izv#=#py93e-8h6zu4r'
 
 DEBUG = False
 ALLOWED_HOSTS = [
@@ -134,6 +134,8 @@ LOCALE_PATHS = [
     os.path.join(CONTENT_DIR, 'locale')
 ]
 
-SIGN_UP_FIELDS = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']
+SIGN_UP_FIELDS = ['username', 'first_name',
+                  'last_name', 'email', 'password1', 'password2']
 if DISABLE_USERNAME:
-    SIGN_UP_FIELDS = ['first_name', 'last_name', 'email', 'password1', 'password2']
+    SIGN_UP_FIELDS = ['first_name', 'last_name',
+                      'email', 'password1', 'password2']
